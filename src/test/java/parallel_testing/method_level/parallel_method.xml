@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="parallel testing" parallel="methods" thread-count="2">
+    <test verbose="2" preserve-order="true" name="C:/Users/jainu/IdeaProjects/API_Automation_Testing">
+
+
+        <classes>
+            <class name="parallel_testing.method_level.parallel_method">
+
+            </class>
+        </classes>
+    </test>
+</suite>

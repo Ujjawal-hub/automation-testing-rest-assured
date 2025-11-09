@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="parallel testing" parallel="tests" thread-count="3">
+    <test  name="apitesting">
+
+
+        <classes>
+            <class name="parallel_testing.test_level.api_testing">
+
+            </class>
+        </classes>
+    </test>
+
+    <test  name="uitesting">
+
+
+        <classes>
+            <class name="parallel_testing.test_level.ui_testing">
+
+            </class>
+        </classes>
+    </test>
+
+    <test  name="dbtesting">
+
+
+        <classes>
+            <class name="parallel_testing.test_level.db_testing">
+
+            </class>
+        </classes>
+    </test>
+</suite>

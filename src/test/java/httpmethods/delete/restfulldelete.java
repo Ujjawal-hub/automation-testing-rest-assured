@@ -1,4 +1,4 @@
-package delete;
+package httpmethods.delete;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
