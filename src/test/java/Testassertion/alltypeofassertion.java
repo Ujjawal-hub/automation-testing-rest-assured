@@ -40,16 +40,25 @@ public class alltypeofassertion {
         vr.log().all();
         vr.statusCode(200);
 
+
+        //Rest Assured Assertion
         vr.body("booking.firstname",Matchers.equalTo("Jimy boy"));
 
         String first = vr.extract().path("booking.firstname");
 
+
+
+        // Testng assertion
         Assert.assertEquals(first,"Jimy boy");
 
 
         String last = vr.extract().path("booking.lastname");
 
-         assertThat(last).isEqualTo("Brown");
+        Integer bookingId = vr.extract().path("bookingid");
+
+
+        // AssertJ( 3rd- Lib to Assertions)
+        assertThat(bookingId).isNotZero().isNotNull().isPositive();
 
 
     }
